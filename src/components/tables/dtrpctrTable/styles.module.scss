@@ -1,0 +1,32 @@
+.label {
+    margin: 15px 0 15px 0;
+    font-weight: bold;
+    font-size: 18px;
+}
+.input {
+    border-radius: 5px;
+    border: none;
+    margin: 0 5px 0 5px;
+    &:focus {
+        box-shadow: none;
+        border: none;
+    }
+}
+.buttonPagination {
+    padding: 8px;
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+@media (max-width: 475px) {
+    .label {
+        text-align: center;
+        margin: 25px;
+    }
+}
+@media (max-width: 767px) {
+    .label {
+        text-align: center;
+        margin: 25px;
+    }
+}

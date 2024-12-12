@@ -1,0 +1,124 @@
+@import "../../../styles/colors.module.scss";
+.imgLogoNav {
+    width: 120px;
+    height: 100px;
+    cursor: pointer;
+}
+.main {
+    background-color: #303030;
+}
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    background-color: #303030;
+}
+.searchImg {
+    width: 26px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.userProfile {
+    font-weight: bold;
+    font-size: 24px;
+    color: white;
+    background-color: $darkGreen;
+    text-transform: uppercase;
+    min-width: 45px;
+    min-height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 0px 14px;
+}
+.input {
+    background-color: transparent;
+    color: white;
+    border-radius: $lightGray;
+    &:focus {
+        background-color: transparent;
+        color: white;
+        border-color: $lightGray;
+        box-shadow: none;
+    }
+    &::placeholder {
+        color: white;
+    }
+}
+.modal {
+    position: absolute;
+    width: 160px;
+    height: 60px;
+    top: 80px;
+    right: 10%;
+    background-color: #303030;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 8px 6px 4px rgba(0,0,0, 0.486);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 20px;
+}
+.overlayModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: transparent;
+}
+.modalLink {
+    color: white;
+    margin: 5px 0px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s;
+    &:hover {
+        color: $darkGreen;
+    }
+}
+.offcanvas {
+    background-color: #303030;
+    color: white;
+}
+.offBody {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 10px;
+    margin: 10px;
+    gap: 5px;
+}
+.offButton {
+    background-color: #303030;
+    border-color: $darkGreen;
+    width: 100%;
+
+    &:hover {
+        background-color: $darkGreen;
+        border-color: $darkGreen;
+    }
+}
+@media (max-width: 768px) {
+    .nav {
+        justify-content: center;
+        gap: 5px;
+    }
+    .modal {
+        top: 140px;
+    }
+}
+@media (max-width: 512px) {
+    .imgLogoNav {
+        margin-top: -10px;
+        margin-bottom: -10px;
+    }
+    .modal {
+        top: 120px;
+    }
+}
