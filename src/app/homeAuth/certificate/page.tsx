@@ -3,8 +3,8 @@ import Certificates from "@/components/homeAuth/certificate";
 
 
 export const metadata: Metadata = {
-  title: 'Trevo - ambiental',
-  icons: '/logo.ico'
+  title: 'Sua Empresa - ambiental',
+  icons: '/seuicon.ico'
 };
 
 

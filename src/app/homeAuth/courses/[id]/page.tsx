@@ -3,8 +3,8 @@ import { Metadata } from "next";
 
 
 export const metadata: Metadata = {
-    title: 'Trevo - ambiental',
-    icons: '/logo.ico'
+    title: 'Sua Empresa - ambiental',
+    icons: '/seuicon.ico'
   };
   
 
