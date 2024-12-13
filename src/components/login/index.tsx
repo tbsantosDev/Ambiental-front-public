@@ -73,7 +73,7 @@ const Login = () => {
                     id="email"
                     name="email"
                     type="email"
-                    placeholder="Qual o seu email?"
+                    placeholder="admin@email.com"
                     required
                     className={styles.input}
                   />
@@ -84,7 +84,7 @@ const Login = () => {
                     id="password"
                     name="password"
                     type="password"
-                    placeholder="Digite sua senha"
+                    placeholder="123456"
                     required
                     className={styles.input}
                   />
